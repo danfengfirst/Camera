@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:background="@color/colorPrimary"
+        >
+        <SurfaceView
+            android:id="@+id/camera_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.flyfish.demo.camera.widget.PreFrontView
+            android:id="@+id/frame_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            app:fontview_padding="20dp"
+            app:fontview_linecolor="@color/colorAccent"
+            app:fontview_linelength="50dp"
+            app:fontview_linewidth="3dp"
+            />
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            android:id="@+id/takephoto_bt"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_take_photo"
+            android:layout_centerInParent="true"
+            android:onClick="takePicture"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

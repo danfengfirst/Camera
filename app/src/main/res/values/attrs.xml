@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PreFrontView">
+        <attr name="fontview_padding" format="dimension"></attr>
+        <attr name="fontview_linelength" format="dimension"></attr>
+        <attr name="fontview_linecolor" format="color"></attr>
+        <attr name="fontview_linewidth" format="dimension"></attr>
+    </declare-styleable>
+
+</resources>
