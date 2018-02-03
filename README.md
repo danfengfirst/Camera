@@ -1,5 +1,7 @@
-关于相机的理解可以看下图，相机默认是横屏的，因此width与height与我们看到的竖屏的width和height相反
+关于相机的理解可以看下图，相机默认是横屏的
 ![image](https://github.com/danfengfirst/Camera//raw/master/camera.jpg)
+上图2的正字想变成正向需要顺时针旋转90度，同样图3、4分别需要180度跟270度，
+同时，相机的PreviewSize的widht指的都是横屏的，因此在TakePhotoTestActivity中最后保存文件时，我使用width/surfaceview.height而height/surfaceview.widht才能保持原来同比例缩放。
  Demo图
  ![image](https://github.com/danfengfirst/Camera//raw/master/Screenshot_2018-02-03-11-53-57.png)
 
