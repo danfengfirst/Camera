@@ -1,3 +1,6 @@
+关于相机的理解可以看下图，相机默认是横屏的，因此width与height与我们看到的竖屏的width和height相反
+![image](https://github.com/danfengfirst/Camera//raw/master/camera.jpg)
+ Demo图
  ![image](https://github.com/danfengfirst/Camera//raw/master/Screenshot_2018-02-03-11-53-57.png)
 
 Blog：http://blog.csdn.net/danfengw/article/details/79246684
