@@ -8,6 +8,7 @@ import android.hardware.Camera;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.Size;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -41,8 +42,11 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         mContext = context;
         getCamera();
         mSupportedPreviewSizes = mCamera.getParameters().getSupportedPreviewSizes();
-//        for (Camera.Size str : mSupportedPreviewSizes)
-//            Log.e(TAG, str.width + "/" + str.height);
+        List<Camera.Size> mSupportedPictureSize=mCamera.getParameters().getSupportedPictureSizes();
+        for (Camera.Size str : mSupportedPreviewSizes)
+            Log.e("相机预览尺寸", str.width + "/" + str.height);
+        for (Camera.Size str : mSupportedPictureSize)
+            Log.e("相机图片尺寸", str.width + "/" + str.height);
         mHolder = getHolder();
         mHolder.addCallback(this);
         mHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
