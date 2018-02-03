@@ -53,7 +53,6 @@ public class ShowPicActivity extends AppCompatActivity {
             matrix.setRotate(digree);
             Log.e("角度",digree+"" );
             bitmap=Bitmap.createBitmap(bitmap,0,0,bitmap.getWidth(),bitmap.getHeight(),matrix,true);
-
             mImageView.setImageBitmap(bitmap);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
